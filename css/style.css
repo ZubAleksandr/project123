@@ -5,15 +5,17 @@ body {
 p {
 	font-family: "Open Sans", sans-serif;
 }
-a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #60606e;
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #60606e;
 }
 header {
 	display: flex;
 	justify-content: center;
 	padding-top: 35px;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 .header_container {
 	display: flex;
@@ -23,7 +25,7 @@ header {
 }
 li {
 	display: inline;
-    position: relative;
+	position: relative;
 }
 ul {
 	margin: 0;
@@ -114,6 +116,11 @@ h2 {
 .text_2 h2 {
 	text-transform: uppercase;
 	font-size: 30px;
+	margin: 0;
+}
+.text_2 {
+	display: flex;
+	flex-direction: column;
 }
 .text_2_img {
 	width: 67px;
@@ -124,14 +131,15 @@ h2 {
 	top: 38px;
 }
 .button {
-    padding: 20px 35px;
-    background-color: #7beec7;
-    text-align: center;
-    display: inline-block;
-    font-size: 14px;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
+	padding: 20px 35px;
+	background-color: #7beec7;
+	text-align: center;
+	display: inline-block;
+	font-size: 14px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-left: auto;
 }
 .text_3 h2 {
 	text-transform: uppercase;
@@ -157,28 +165,84 @@ h2 {
 }
 .text_3 {
 	text-align: center;
+	margin-top: 150px;
 }
 .portfolio_main {
-    padding-top: 101px;
+	margin-top: 101px;
 	display: flex;
-	text-transform: uppercase;
-	margin: auto;
-	justify-content: space-between;
-	max-width: 1000px;
+    text-transform: uppercase;
+    justify-content: space-around;
 }
 .portfolio_1 {
 	display: flex;
 	flex-wrap: wrap;
-    margin: auto;
-    line-height: 2.14;
-    font-size: 14px;
-    font-family: Open
+	line-height: 2.14;
+	font-size: 14px;
+	margin: 0;
 }
 .portfolio_1 img {
 	object-fit: contain;
-    width: 28px;
-    height: 28px;
+	width: 28px;
+	height: 28px;
 }
 .text_block {
-    flex-basis: calc(50% - 50px);
+	flex-basis: calc(50% - 50px);
+}
+.text_4 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin-top: 150px;
+}
+.text_4 h2 {
+	text-transform: uppercase;
+	font-size: 30px;
+	z-index: 2;
+}
+.under_text {
+	width: 60px;
+	height: 21px;
+	background-color: #7beec7;
+	position: relative;
+	top: 37px;
+	z-index: -1;
+}
+.main_block {
+    display: flex;
+    justify-content: space-around;
+}
+.block_menu {
+	display: flex;
+    flex-direction: column;
+}
+.category {
+	display: flex;
+    flex-direction: column;
+}
+.category li {
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 3.43;
+    font-weight: bold;
+}
+.block_menu h2 {
+    margin: 0;
+	font-size: 30px;
+    text-transform: uppercase;
+}
+.block_photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: calc(1/3*100% - (1 - 1/3)*10px);
+}
+.block_photo img{
+    display: flex;
+    object-fit: scale-down;
+}
+.category a:hover{
+    background-color: #7beec7;
+    color: white;
+    display: inline;
 }
