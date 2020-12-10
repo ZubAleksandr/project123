@@ -2,13 +2,6 @@ body {
 	margin: 0;
 	color: #60606e;
 }
-h1 {
-	font-size: 36px;
-    font-weight: bold;
-    margin: auto;
-    text-transform: uppercase;
-    font-family: "Open Sans", sans-serif;
-}
 p {
 	font-family: "Open Sans", sans-serif;
 }
@@ -20,15 +13,14 @@ a {
 header {
 	display: flex;
 	justify-content: center;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-top: 35px;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 .header_container {
-	position: absolute;
 	display: flex;
 	justify-content: space-between;
-	padding-top: 35px;
-	max-width: 1300px;
+	max-width: 1440px;
 	width: 100%;
 }
 li {
@@ -44,22 +36,22 @@ ul {
 }
 a .test {
 	width: 0%;
-	transition: 400ms;
+	transition: 300ms;
+}
+a:hover .test {
+	width: 50%;
 }
 a:hover .test {
 	position: absolute;
 	width: 25px;
 	height: 10px;
 	z-index: -1;
-	border-top: 1px solid #60606e;
+	border-top: 1px solid black;
 	bottom: 15px;
 	left: 2px;
-	width: 60%;
+	width: 50%;
 }
-.page_1 {
-	max-width: 1300px;
-	margin: auto;
-}
+
 .block_1,
 .block_2 {
 	display: flex;
@@ -74,11 +66,9 @@ a:hover .test {
 	background-color: #7beec7;
 	text-align: center;
 }
+h1,
 h2 {
-    margin: auto;
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: bold;
+	margin: auto;
 }
 .big_logo {
 	width: 555px;
@@ -95,8 +85,8 @@ h2 {
 }
 .background {
 	background-image: url(../images/Layer1.png);
-	width: 100%;
-	height: 100%;
+	min-width: 100%;
+	height: 850px;
 	display: flex;
 	position: fixed;
 	z-index: -3;
@@ -117,7 +107,7 @@ h2 {
 .part_2_2 {
 	margin-top: 125px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 .text_2 p {
 	font-size: 18px;
@@ -133,8 +123,8 @@ h2 {
 	flex-direction: column;
 }
 .text_2_img {
-	width: 68px;
-	height: 21px;
+	width: 67px;
+	height: 27px;
 	background-color: #7beec7;
 	position: relative;
 	z-index: -1;
@@ -150,14 +140,6 @@ h2 {
 	text-decoration: none;
 	text-transform: uppercase;
 	margin-left: auto;
-	transition: 0.3s;
-}
-.button:hover {
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.page_3 {
-	max-width: 1300px;
-	margin: auto;
 }
 .text_3 h2 {
 	text-transform: uppercase;
@@ -188,7 +170,8 @@ h2 {
 .portfolio_main {
 	margin-top: 101px;
 	display: flex;
-	text-transform: uppercase;
+    text-transform: uppercase;
+    justify-content: space-around;
 }
 .portfolio_1 {
 	display: flex;
@@ -204,10 +187,6 @@ h2 {
 }
 .text_block {
 	flex-basis: calc(50% - 50px);
-}
-.page_4 {
-	max-width: 1300px;
-	margin: auto;
 }
 .text_4 {
 	display: flex;
@@ -230,74 +209,40 @@ h2 {
 	z-index: -1;
 }
 .main_block {
-	display: flex;
-	max-width: 1300px;
-	margin: auto;
+    display: flex;
+    justify-content: space-around;
 }
 .block_menu {
 	display: flex;
-	flex-direction: column;
+    flex-direction: column;
 }
 .category {
 	display: flex;
-	flex-direction: column;
+    flex-direction: column;
 }
 .category li {
 	font-size: 14px;
 	text-transform: uppercase;
 	line-height: 3.43;
-	font-weight: bold;
+    font-weight: bold;
 }
 .block_menu h2 {
-	margin: 0;
+    margin: 0;
 	font-size: 30px;
-	text-transform: uppercase;
-}
-
-.category a:hover {
-	background-color: #7beec7;
-	color: white;
-	display: inline;
-}
-.background_about img {
-	width: 100%;
-	height: 500px;
-}
-.background_about {
-	position: relative;
-    z-index: -5;
-}
-.text_title_about {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
-    bottom: 267px;
     text-transform: uppercase;
 }
-.page_about_2{
+.block_photo{
     display: flex;
-    width: 1300px;
-    margin: auto;
-    line-height: 1.71;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: calc(1/3*100% - (1 - 1/3)*10px);
 }
-.text_about_img {
-	width: 68px;
-	height: 21px;
-	background-color: #7beec7;
-	position: relative;
-	z-index: -1;
-	top: 50px;
+.block_photo img{
+    display: flex;
+    object-fit: scale-down;
 }
-.text_about_1{
-    padding: 17px;
-}
-.small_text{
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: "Open Sans";
-}
-.title_about{
-    text-align: center;
-    margin-top: 163px;
+.category a:hover{
+    background-color: #7beec7;
+    color: white;
+    display: inline;
 }
